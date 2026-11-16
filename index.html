@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anton Kuryshev</title>
+<style>
+  :root {
+    --bg: #0e0e0f;
+    --fg: #ececec;
+    --dim: #7a7a7e;
+    --line: #26262a;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    width: 100%;
+    max-width: 34rem;
+  }
+  h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.75rem, 6vw, 2.75rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  p {
+    margin: 0 0 2rem;
+    color: var(--dim);
+    max-width: 28rem;
+  }
+  .meta {
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--dim);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  a {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1px;
+    transition: border-color 0.15s ease;
+  }
+  a:hover { border-color: var(--fg); }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Anton Kuryshev</h1>
+    <p>Sound designer and audio post-production specialist. Site in progress.</p>
+    <div class="meta">
+      <span>Barcelona</span>
+      <a href="https://www.imdb.com/name/nm5033805/">IMDb</a>
+    </div>
+  </main>
+</body>
+</html>
